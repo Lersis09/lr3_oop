@@ -1,14 +1,14 @@
 # підключення розробленого модулю
-import main
+import lab3
 
 # словник для швидкого доступу до відповідної функції виконання
 task_func_dict = {
-    "1": main.task1,
-    "2": main.task2,
+    "1": lab3.task_1,
+    "2": lab3.task_2,
 }
 
 if __name__ == '__main__':
-  choice = input("Please, choose the task 1-3 (0-EXIT): ")
+  choice = input("Please, choose the task 1-2 (0-EXIT): ")
   while choice != "0":
     # якщо даний ключ є у словнику
     if choice in task_func_dict.keys():
