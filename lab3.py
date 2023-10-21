@@ -3,7 +3,7 @@ import numpy as np
 
 
 def Even(K):
-    """Функция, которая проверяет, является ли число K четным"""
+    """Функція, яка перевіряє, чи є число K парним"""
     return K % 2 == 0
 
 def Even_for_list(list_of_K):
@@ -21,7 +21,7 @@ def count_even_numbers(numbers):
             count += 1
     return count
   
-def task_1():
+def task_24():
     """Введення вхідних даних, виклик функції для підрахунку кількості 
      парних чисел,виведення результату"""
     try:
@@ -50,14 +50,14 @@ def matrix1(filename):
             # Пошук мінімального і максимального елементів в кожному рядку
             min_vals = np.min(input, axis=1)
             max_vals = np.max(input, axis=1)
-            print(min_vals)
-            print(max_vals)
+            print("Min elements in each str:",min_vals)
+            print("Max elements in each str:",max_vals)
             
             # Знаходження рядка з найбільшим максимальним і мінімальним елементами
             min_row = np.argmin(min_vals)
             max_row = np.argmax(max_vals)
-            print("Min:",min_row)
-            print("Max:",max_row)
+            print("Str with max element:",min_row)
+            print("Str with min element:",max_row)
             
             # Поміняти місцями рядки матриці
             changed_matrix = np.copy(input)
@@ -69,7 +69,7 @@ def matrix1(filename):
     return np.zeros((M, N))
 
 
-def task_2():
+def task_7():
     """Введення імені вхідного файлу, виклик функції для зчитування і обробки 
        матриці, виведення результатів"""
     filename = input("Enter filename (.txt): ")

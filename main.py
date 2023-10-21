@@ -3,8 +3,8 @@ import lab3
 
 # словник для швидкого доступу до відповідної функції виконання
 task_func_dict = {
-    "1": lab3.task_1,
-    "2": lab3.task_2,
+    "1": lab3.task_24,
+    "2": lab3.task_7,
 }
 
 if __name__ == '__main__':
